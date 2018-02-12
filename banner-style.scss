@@ -1,0 +1,47 @@
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 16px;
+  .banner-image-content {
+    left: 0;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.175, 0.82, 0.265, 1);
+  }
+  .banner-item {
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+  }
+  .banner-controller {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    .banner-controller-item {
+      $color1: rgba(#fff, 0.65);
+      $color2: rgba(#fff, 0.95);
+      $color3: rgba(#000, 0.55);
+      @include fade();
+      background-color: $color1;
+      border: 1px solid $color2;
+      cursor: pointer;
+      border-radius: 20px;
+      padding: 0 6px;
+      margin: 5px 5px;
+      font-weight: 800;
+      color: $color3;
+      &:hover,
+      &.active {
+        padding: 0 15px;
+        background-color: $color2;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./banner-style.css"> -->
+  <script type="text/javascript" src="../banner.js"></script>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      display:flex;flex:1;height:100%;justify-content: center;align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  let imageUrls = [
+    'http://lanten.fun/image-swipe/images/1.png',
+    'http://lanten.fun/image-swipe/images/2.png',
+    'http://lanten.fun/image-swipe/images/3.png',
+  ]
+
+
+  let banner = new Banner({
+    images: imageUrls,
+    width: 1000,
+    interval: 5000, // 默认值 3000 单位 ms 设为 0 不自动滚动
+  })
+
+  document.body.appendChild(banner.render())
+</script>
