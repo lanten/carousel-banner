@@ -3,7 +3,7 @@
 - 不支持 IE (所有版本) (有需要可以使用 babel 编译成 es5)
 - ES6 语法,原生无依赖
 
-## 示例 : http://lanten.fun/carousel-banner/index.html
+## 示例 : http://lanten.github.io/carousel-banner/index.html
 
 ```js
   let imageUrls = [
